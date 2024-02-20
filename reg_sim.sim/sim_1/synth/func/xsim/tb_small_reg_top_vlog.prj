@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_small_reg_top_func_synth.v" \
+
+sv xil_defaultlib  \
+"../../../../../reg_sim.srcs/sim_1/new/tb_small_reg_top.sv" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,263 @@
+QuestaSim-64 vmap 2022.4 Lib Mapping Utility 2022.10 Oct 18 2022
+vmap xtlm /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm 
+Modifying modelsim.ini
+sccom -64 -cpppath /tool/gcc/7.4.0/bin/g++ -nodebug -std=c++11 -I /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include -I /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/common_cpp_v1_0/include -Wall -fPIC -fPIC -DXTLM_DLL -O3 -work xtlm -f /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm/.cxl.systemc.xtlm.xtlm.cmf 
+Start time: 18:38:24 on Jan 19,2024
+
+QuestaSim-64 sccom 2022.4 compiler 2022.10 Oct 18 2022
+
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xsc_sim_manager.cxx: In static member function ‘static void xsc::utils::xsc_sim_manager::propogateParameterValues()’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xsc_sim_manager.cxx:544:25: warning: variable ‘valueFirst’ set but not used [-Wunused-but-set-variable]
+    xsc_sim_param_value* valueFirst = value;
+                         ^~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xsc_sim_manager.cxx:566:25: warning: unused variable ‘valueProp’ [-Wunused-variable]
+    xsc_sim_param_value* valueProp = value;
+                         ^~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xsc_sim_manager.cxx: In static member function ‘static int xsc::utils::xsc_sim_manager::_getInstanceParameterInt(std::__cxx11::string, std::__cxx11::string)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xsc_sim_manager.cxx:637:9: warning: ‘val’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     int val;
+         ^~~
+In file included from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/xtlm_adaptors/xaximm_pin2xtlm_wr_t.h:59:0,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/xtlm_adaptors/xaximm_pin2xtlm_t.h:51,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/xtlm.h:126,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/utils/xtlm_aximm_fifo.h:50,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_fifo.cxx:48:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/xtlm_adaptors/xtlm_adaptors_utils.h: In constructor ‘xtlm::xtlm_adaptor::xtlm_adaptor_log_utils::xtlm_adaptor_log_utils(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/xtlm_adaptors/xtlm_adaptors_utils.h:65:34: warning: ‘xtlm::xtlm_adaptor::xtlm_adaptor_log_utils::m_report_handler’ will be initialized after [-Wreorder]
+  xsc::common_cpp::report_handler m_report_handler;
+                                  ^~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/xtlm_adaptors/xtlm_adaptors_utils.h:61:7: warning:   ‘bool xtlm::xtlm_adaptor::xtlm_adaptor_log_utils::m_enable_aximm_logs’ [-Wreorder]
+  bool m_enable_aximm_logs;
+       ^~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/xtlm_adaptors/xtlm_adaptors_utils.h:67:5: warning:   when initialized here [-Wreorder]
+     xtlm_adaptor_log_utils(const std::string module_name,
+     ^~~~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_initiator_wr_socket_util.cxx: In constructor ‘xtlm::xtlm_aximm_initiator_wr_socket_util::xtlm_aximm_initiator_wr_socket_util(sc_core::sc_module_name, xtlm::aximm::granularity, int)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_initiator_wr_socket_util.cxx:297:22: warning: base ‘xtlm::xtlm_aximm_initiator_base’ will be initialized after [-Wreorder]
+     "wr_skt", width_p) {
+                      ^
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_initiator_wr_socket_util.cxx:297:22: warning:   base ‘sc_core::sc_module’ [-Wreorder]
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_initiator_wr_socket_util.cxx:293:1: warning:   when initialized here [-Wreorder]
+ xtlm_aximm_initiator_wr_socket_util::xtlm_aximm_initiator_wr_socket_util(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_initiator_wr_socket_util.cxx:48:0:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/utils/xtlm_aximm_initiator_wr_socket_util.h:180:31: warning: ‘xtlm::xtlm_aximm_initiator_wr_socket_util::m_peq’ will be initialized after [-Wreorder]
+    xtlm_aximm_protocol_types> m_peq;
+                               ^~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/utils/xtlm_aximm_initiator_wr_socket_util.h:175:30: warning:   ‘xtlm::xtlm_aximm_initiator_socket xtlm::xtlm_aximm_initiator_wr_socket_util::wr_socket’ [-Wreorder]
+  xtlm_aximm_initiator_socket wr_socket;
+                              ^~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_initiator_wr_socket_util.cxx:293:1: warning:   when initialized here [-Wreorder]
+ xtlm_aximm_initiator_wr_socket_util::xtlm_aximm_initiator_wr_socket_util(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_master_if.cxx: In member function ‘xtlm::aximm_payload* xtlm::xtlm_aximm_master_if::get_payload(unsigned int)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_master_if.cxx:115:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int i = 0; i < DATA_WIDTH_BYTES * burst_len; i++) {
+                    ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_target_rd_socket_util.cxx: In constructor ‘xtlm::xtlm_aximm_target_rd_socket_util::xtlm_aximm_target_rd_socket_util(sc_core::sc_module_name, xtlm::aximm::granularity, int)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_target_rd_socket_util.cxx:167:25: warning: base ‘xtlm::xtlm_aximm_target_base’ will be initialized after [-Wreorder]
+     "rd_socket", width_p)
+                         ^
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_target_rd_socket_util.cxx:167:25: warning:   base ‘sc_core::sc_module’ [-Wreorder]
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_target_rd_socket_util.cxx:163:1: warning:   when initialized here [-Wreorder]
+ xtlm_aximm_target_rd_socket_util::xtlm_aximm_target_rd_socket_util(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_target_rd_socket_util.cxx:49:0:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/utils/xtlm_aximm_target_rd_socket_util.h:195:31: warning: ‘xtlm::xtlm_aximm_target_rd_socket_util::m_peq’ will be initialized after [-Wreorder]
+    xtlm_aximm_protocol_types> m_peq;
+                               ^~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/utils/xtlm_aximm_target_rd_socket_util.h:187:27: warning:   ‘xtlm::xtlm_aximm_target_socket xtlm::xtlm_aximm_target_rd_socket_util::rd_socket’ [-Wreorder]
+  xtlm_aximm_target_socket rd_socket;
+                           ^~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_target_rd_socket_util.cxx:163:1: warning:   when initialized here [-Wreorder]
+ xtlm_aximm_target_rd_socket_util::xtlm_aximm_target_rd_socket_util(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_target_wr_socket_util.cxx: In constructor ‘xtlm::xtlm_aximm_target_wr_socket_util::xtlm_aximm_target_wr_socket_util(sc_core::sc_module_name, xtlm::aximm::granularity, int)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_target_wr_socket_util.cxx:130:25: warning: base ‘xtlm::xtlm_aximm_target_base’ will be initialized after [-Wreorder]
+     "wr_socket", width_p)
+                         ^
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_target_wr_socket_util.cxx:130:25: warning:   base ‘sc_core::sc_module’ [-Wreorder]
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_target_wr_socket_util.cxx:126:1: warning:   when initialized here [-Wreorder]
+ xtlm_aximm_target_wr_socket_util::xtlm_aximm_target_wr_socket_util(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_target_wr_socket_util.cxx:48:0:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/utils/xtlm_aximm_target_wr_socket_util.h:207:31: warning: ‘xtlm::xtlm_aximm_target_wr_socket_util::m_peq’ will be initialized after [-Wreorder]
+    xtlm_aximm_protocol_types> m_peq;
+                               ^~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/utils/xtlm_aximm_target_wr_socket_util.h:199:27: warning:   ‘xtlm::xtlm_aximm_target_socket xtlm::xtlm_aximm_target_wr_socket_util::wr_socket’ [-Wreorder]
+  xtlm_aximm_target_socket wr_socket;
+                           ^~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_target_wr_socket_util.cxx:126:1: warning:   when initialized here [-Wreorder]
+ xtlm_aximm_target_wr_socket_util::xtlm_aximm_target_wr_socket_util(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_tracer.cxx: In member function ‘void xtlm::xtlm_aximm_tracer::trace(xtlm::aximm_payload&, tlm::tlm_phase&, sc_core::sc_time&, const char*)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_aximm_tracer.cxx:104:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < trans.get_data_length(); i++)
+                   ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_axis_initiator_socket_util.cxx:48:0:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/utils/xtlm_axis_initiator_socket_util.h: In constructor ‘xtlm::xtlm_axis_initiator_socket_util::xtlm_axis_initiator_socket_util(sc_core::sc_module_name, xtlm::axis::granularity, int)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/utils/xtlm_axis_initiator_socket_util.h:110:30: warning: ‘xtlm::xtlm_axis_initiator_socket_util::m_peq’ will be initialized after [-Wreorder]
+    xtlm_axis_protocol_types> m_peq;
+                              ^~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_axis_initiator_socket_util.cxx:154:12: warning:   base ‘xtlm::xtlm_axis_initiator_base’ [-Wreorder]
+     width_p)
+            ^
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_axis_initiator_socket_util.cxx:148:1: warning:   when initialized here [-Wreorder]
+ xtlm_axis_initiator_socket_util::xtlm_axis_initiator_socket_util(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_axis_master_if.cxx: In member function ‘xtlm::axis_payload* xtlm::xtlm_axis_master_if::get_payload(unsigned int)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_axis_master_if.cxx:86:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int i = 0; i < DATA_WIDTH_BYTES * num_beats; i++) {
+                    ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/xtlm_adaptors/xaximm_pin2xtlm_wr_t.h:59:0,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/xtlm_adaptors/xaximm_pin2xtlm_t.h:51,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/xtlm.h:126,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/utils/xtlm_axis_slave_if.h:60,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_axis_slave_if.cxx:48:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/xtlm_adaptors/xtlm_adaptors_utils.h: In constructor ‘xtlm::xtlm_adaptor::xtlm_adaptor_log_utils::xtlm_adaptor_log_utils(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/xtlm_adaptors/xtlm_adaptors_utils.h:65:34: warning: ‘xtlm::xtlm_adaptor::xtlm_adaptor_log_utils::m_report_handler’ will be initialized after [-Wreorder]
+  xsc::common_cpp::report_handler m_report_handler;
+                                  ^~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/xtlm_adaptors/xtlm_adaptors_utils.h:61:7: warning:   ‘bool xtlm::xtlm_adaptor::xtlm_adaptor_log_utils::m_enable_aximm_logs’ [-Wreorder]
+  bool m_enable_aximm_logs;
+       ^~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/xtlm_adaptors/xtlm_adaptors_utils.h:67:5: warning:   when initialized here [-Wreorder]
+     xtlm_adaptor_log_utils(const std::string module_name,
+     ^~~~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_axis_target_socket_util.cxx: In member function ‘void xtlm::xtlm_axis_target_socket_util_imp::reset()’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_axis_target_socket_util.cxx:87:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < m_payloads_to_upscale.size(); i++)
+                   ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_axis_target_socket_util.cxx:91:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < m_pending_txs.size(); i++)
+                   ~~^~~~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_axis_target_socket_util.cxx:95:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < m_pending_responses.size(); i++)
+                   ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_axis_target_socket_util.cxx: In member function ‘bool xtlm::xtlm_axis_target_socket_util_imp::up_scale_and_transport(xtlm::axis_payload&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_axis_target_socket_util.cxx:212:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for (int i = 0; i < n_trans; i++)
+                    ~~^~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_axis_target_socket_util.cxx: In member function ‘bool xtlm::xtlm_axis_target_socket_util_imp::down_scale_and_transport(xtlm::axis_payload&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_axis_target_socket_util.cxx:308:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < no_of_beats; i++)
+                  ~~^~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_axis_target_socket_util.cxx:323:9: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (i == (no_of_beats - 1))
+       ~~^~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_axis_target_socket_util.cxx:379:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   downscaled_trans->set_tlast((i == no_of_beats - 1) && trans.get_tlast());
+                                ~~^~~~~~~~~~~~~~~~~~
+In file included from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_axis_target_socket_util.cxx:48:0:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/utils/xtlm_axis_target_socket_util.h: In constructor ‘xtlm::xtlm_axis_target_socket_util::xtlm_axis_target_socket_util(sc_core::sc_module_name, xtlm::axis::granularity, int)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/utils/xtlm_axis_target_socket_util.h:156:30: warning: ‘xtlm::xtlm_axis_target_socket_util::m_peq’ will be initialized after [-Wreorder]
+    xtlm_axis_protocol_types> m_peq;
+                              ^~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_axis_target_socket_util.cxx:392:17: warning:   base ‘xtlm::xtlm_axis_target_base’ [-Wreorder]
+     width_hint_p)
+                 ^
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/utils/xtlm_axis_target_socket_util.cxx:387:1: warning:   when initialized here [-Wreorder]
+ xtlm_axis_target_socket_util::xtlm_axis_target_socket_util(
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_initiator_socket.cxx: In member function ‘void xtlm::xtlm_aximm_initiator_socket::bind(xtlm::xtlm_aximm_target_socket&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_initiator_socket.cxx:57:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_width != s.get_bus_width()) {
+      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_initiator_socket.cxx: In member function ‘void xtlm::xtlm_aximm_initiator_socket::bind(xtlm::xtlm_aximm_passthrough_target_socket_tagged&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_initiator_socket.cxx:66:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_width != s.get_bus_width()) {
+      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_initiator_socket.cxx: In member function ‘void xtlm::xtlm_aximm_initiator_socket::bind(xtlm::xtlm_aximm_initiator_socket&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_initiator_socket.cxx:75:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_width != s.get_bus_width()) {
+      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+In file included from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_monitor_socket.cxx:48:0:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/xtlm_sockets/xtlm_aximm_monitor_socket.h: In constructor ‘xtlm::xtlm_aximm_monitor_socket::xtlm_aximm_monitor_socket(const char*, int, bool)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/xtlm_sockets/xtlm_aximm_monitor_socket.h:121:7: warning: ‘xtlm::xtlm_aximm_monitor_socket::is_hier’ will be initialized after [-Wreorder]
+  bool is_hier;
+       ^~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/xtlm_sockets/xtlm_aximm_monitor_socket.h:119:37: warning:   ‘xsc::common_cpp::report_handler xtlm::xtlm_aximm_monitor_socket::m_logger’ [-Wreorder]
+     xsc::common_cpp::report_handler m_logger;   //!< Log framework
+                                     ^~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_monitor_socket.cxx:60:1: warning:   when initialized here [-Wreorder]
+ xtlm::xtlm_aximm_monitor_socket::xtlm_aximm_monitor_socket(const char* name,
+ ^~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_passthrough_target_socket_tagged.cxx: In member function ‘void xtlm::xtlm_aximm_passthrough_target_socket_tagged::bind(xtlm::xtlm_aximm_initiator_socket&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_passthrough_target_socket_tagged.cxx:58:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_width != s.get_bus_width()) {
+      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_passthrough_target_socket_tagged.cxx: In member function ‘void xtlm::xtlm_aximm_passthrough_target_socket_tagged::bind(xtlm::xtlm_aximm_simple_initiator_socket_tagged&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_passthrough_target_socket_tagged.cxx:67:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_width != s.get_bus_width()) {
+      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_simple_initiator_socket_tagged.cxx: In member function ‘void xtlm::xtlm_aximm_simple_initiator_socket_tagged::bind(xtlm::xtlm_aximm_target_socket&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_simple_initiator_socket_tagged.cxx:59:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_width != s.get_bus_width()) {
+      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_simple_initiator_socket_tagged.cxx: In member function ‘void xtlm::xtlm_aximm_simple_initiator_socket_tagged::bind(xtlm::xtlm_aximm_passthrough_target_socket_tagged&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_simple_initiator_socket_tagged.cxx:68:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_width != s.get_bus_width()) {
+      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_simple_initiator_socket_tagged.cxx: In member function ‘void xtlm::xtlm_aximm_simple_initiator_socket_tagged::bind(xtlm::xtlm_aximm_initiator_socket&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_simple_initiator_socket_tagged.cxx:76:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_width != s.get_bus_width()) {
+      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_target_socket.cxx: In member function ‘void xtlm::xtlm_aximm_target_socket::bind(xtlm::xtlm_aximm_initiator_socket&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_target_socket.cxx:58:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_width != s.get_bus_width()) {
+      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_target_socket.cxx: In member function ‘void xtlm::xtlm_aximm_target_socket::bind(xtlm::xtlm_aximm_simple_initiator_socket_tagged&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_target_socket.cxx:70:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_width != s.get_bus_width()) {
+      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_target_socket.cxx: In member function ‘void xtlm::xtlm_aximm_target_socket::bind(xtlm::xtlm_aximm_target_socket&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_target_socket.cxx:82:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_width != s.get_bus_width()) {
+      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_target_socket.cxx: In member function ‘void xtlm::xtlm_aximm_target_socket::bind(xtlm::xtlm_aximm_passthrough_target_socket_tagged&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_aximm_target_socket.cxx:91:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_width != s.get_bus_width()) {
+      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+In file included from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_axis_monitor_socket.cxx:48:0:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/xtlm_sockets/xtlm_axis_monitor_socket.h: In constructor ‘xtlm::xtlm_axis_monitor_socket::xtlm_axis_monitor_socket(const char*, int, bool)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/xtlm_sockets/xtlm_axis_monitor_socket.h:122:7: warning: ‘xtlm::xtlm_axis_monitor_socket::is_hier’ will be initialized after [-Wreorder]
+  bool is_hier;
+       ^~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/include/xtlm_sockets/xtlm_axis_monitor_socket.h:120:37: warning:   ‘xsc::common_cpp::report_handler xtlm::xtlm_axis_monitor_socket::m_logger’ [-Wreorder]
+     xsc::common_cpp::report_handler m_logger;
+                                     ^~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_axis_monitor_socket.cxx:60:1: warning:   when initialized here [-Wreorder]
+ xtlm::xtlm_axis_monitor_socket::xtlm_axis_monitor_socket(const char* name,
+ ^~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_axis_passthrough_target_socket_tagged.cxx: In member function ‘void xtlm::xtlm_axis_passthrough_target_socket_tagged::bind(xtlm::xtlm_axis_initiator_socket&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_axis_passthrough_target_socket_tagged.cxx:57:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_width != s.get_bus_width()) {
+      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_axis_passthrough_target_socket_tagged.cxx: In member function ‘void xtlm::xtlm_axis_passthrough_target_socket_tagged::bind(xtlm::xtlm_axis_simple_initiator_socket_tagged&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_axis_passthrough_target_socket_tagged.cxx:66:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_width != s.get_bus_width()) {
+      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_axis_simple_initiator_socket_tagged.cxx: In member function ‘void xtlm::xtlm_axis_simple_initiator_socket_tagged::bind(xtlm::xtlm_axis_target_socket&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_axis_simple_initiator_socket_tagged.cxx:59:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_width != s.get_bus_width()) {
+      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_axis_simple_initiator_socket_tagged.cxx: In member function ‘void xtlm::xtlm_axis_simple_initiator_socket_tagged::bind(xtlm::xtlm_axis_passthrough_target_socket_tagged&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_axis_simple_initiator_socket_tagged.cxx:68:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_width != s.get_bus_width()) {
+      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_axis_simple_initiator_socket_tagged.cxx: In member function ‘void xtlm::xtlm_axis_simple_initiator_socket_tagged::bind(xtlm::xtlm_axis_initiator_socket&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/xtlm/xtlm/src/xtlm_sockets/xtlm_axis_simple_initiator_socket_tagged.cxx:76:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_width != s.get_bus_width()) {
+      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+End time: 18:39:52 on Jan 19,2024, Elapsed time: 0:01:28
+Errors: 0, Warnings: 0
+sccom -64 -cpppath /tool/gcc/7.4.0/bin/g++ -nodebug -linkshared -lib xtlm -L/home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/common_cpp_v1_0 -lcommon_cpp_v1_0 -work xtlm 
+Start time: 18:39:52 on Jan 19,2024
+
+QuestaSim-64 sccom 2022.4 compiler 2022.10 Oct 18 2022
+
+/usr/bin/ld: cannot find -lcommon_cpp_v1_0: No such file or directory
+collect2: error: ld returned 1 exit status
+** Error: (sccom-6126) Linking failed. Creation of /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm/systemc.so failed.
+End time: 18:39:53 on Jan 19,2024, Elapsed time: 0:00:01
+Errors: 1, Warnings: 0

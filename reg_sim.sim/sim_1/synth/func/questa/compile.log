@@ -1,0 +1,30 @@
+** Warning: (vlib-34) Library already exists at "questa_lib/work".
+** Warning: (vlib-34) Library already exists at "questa_lib/msim".
+** Warning: (vlib-34) Library already exists at "questa_lib/msim/xil_defaultlib".
+QuestaSim-64 vmap 2019.4 Lib Mapping Utility 2019.10 Oct 15 2019
+vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+Start time: 15:27:30 on Feb 02,2024
+vlog -64 -incr -mfcu -work xil_defaultlib tb_fifo_reg_func_synth.v 
+-- Skipping module ff_d
+-- Skipping module ff_d__1
+-- Skipping module ff_d__2
+-- Skipping module ff_d__3
+-- Skipping module fifo_reg
+-- Skipping module glbl
+
+Top level modules:
+	fifo_reg
+	glbl
+End time: 15:27:31 on Feb 02,2024, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+Start time: 15:27:31 on Feb 02,2024
+vlog -64 -incr -mfcu -sv -work xil_defaultlib ../../../../../../FIFO/FIFO.srcs/sim_1/new/tb_fifo_reg.sv 
+-- Compiling module tb_fifo_reg
+
+Top level modules:
+	tb_fifo_reg
+End time: 15:27:31 on Feb 02,2024, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

@@ -1,0 +1,38 @@
+QuestaSim-64 vmap 2022.4 Lib Mapping Utility 2022.10 Oct 18 2022
+vmap rwd_tlmmodel_v1 /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/rwd_tlmmodel_v1 
+Modifying modelsim.ini
+sccom -64 -cpppath /tool/gcc/7.4.0/bin/g++ -nodebug -I /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/rwd_tlmmodel/rwd_tlmmodel_v1/include -I /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/debug_tcp_server_v1/include/ -Wall -fPIC -fPIC -std=c++11 -DRWD_TLMMODEL_SC_DLL -O3 -work rwd_tlmmodel_v1 -f /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/rwd_tlmmodel_v1/.cxl.systemc.rwd_tlmmodel_v1.rwd_tlmmodel_v1.cmf 
+Start time: 18:42:18 on Jan 19,2024
+
+QuestaSim-64 sccom 2022.4 compiler 2022.10 Oct 18 2022
+
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/rwd_tlmmodel/rwd_tlmmodel_v1/src/rwd_tlmmodel.cpp: In member function ‘virtual void rwd_tlmmodel::requestProcess_cb(rwd_packet&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/rwd_tlmmodel/rwd_tlmmodel_v1/src/rwd_tlmmodel.cpp:218:4: warning: this ‘while’ clause does not guard... [-Wmisleading-indentation]
+    while(!m_impl->tx_done);
+    ^~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/rwd_tlmmodel/rwd_tlmmodel_v1/src/rwd_tlmmodel.cpp:219:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
+    {
+    ^
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/rwd_tlmmodel/rwd_tlmmodel_v1/src/rwd_tlmmodel.cpp: In member function ‘void rwd_tlmmodel::run_sc_thread()’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/rwd_tlmmodel/rwd_tlmmodel_v1/src/rwd_tlmmodel.cpp:317:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                     for(int i = 0; i < data_l; i=i+4) {
+                                    ~~^~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/rwd_tlmmodel/rwd_tlmmodel_v1/src/rwd_tlmmodel.cpp:288:28: warning: unused variable ‘data_ptr’ [-Wunused-variable]
+             unsigned char* data_ptr = pay->get_data_ptr();
+                            ^~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/rwd_tlmmodel/rwd_tlmmodel_v1/src/rwd_tlmmodel.cpp: In member function ‘void rwd_tlmmodel_impl::display_packet(const rwd_packet&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/rwd_tlmmodel/rwd_tlmmodel_v1/src/rwd_tlmmodel.cpp:359:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for(int i=0; i<pkt.DataLength; i++){
+                      ~^~~~~~~~~~~~~~~
+End time: 18:42:22 on Jan 19,2024, Elapsed time: 0:00:04
+Errors: 0, Warnings: 0
+sccom -64 -cpppath /tool/gcc/7.4.0/bin/g++ -nodebug -linkshared -lib rwd_tlmmodel_v1 -L/home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/debug_tcp_server_v1 -ldebug_tcp_server_v1 -work rwd_tlmmodel_v1 
+Start time: 18:42:22 on Jan 19,2024
+
+QuestaSim-64 sccom 2022.4 compiler 2022.10 Oct 18 2022
+
+/usr/bin/ld: cannot find -ldebug_tcp_server_v1: No such file or directory
+collect2: error: ld returned 1 exit status
+** Error: (sccom-6126) Linking failed. Creation of /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/rwd_tlmmodel_v1/systemc.so failed.
+End time: 18:42:23 on Jan 19,2024, Elapsed time: 0:00:01
+Errors: 1, Warnings: 0

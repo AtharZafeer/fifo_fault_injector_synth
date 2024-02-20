@@ -1,0 +1,17 @@
+<SIMMODEL_NAME>:debug_tcp_server
+<LIBRARY_NAME>:debug_tcp_server_v1
+<LIBRARY_TYPE>:CPP
+<OUTPUT_FORMAT>:library
+<CPP_SOURCES>:systemc/simlibs/debug_tcp_server/debug_tcp_server_v1/src/RdWrTCPSocket.cpp
+<CPP_INCLUDE_DIRS>:simlibs/debug_tcp_server_v1/include/
+<SYSTEMC_COMPILE_OPTION>:-nodebug
+<CPP_COMPILE_OPTION>:-Wall -fPIC
+<C_COMPILE_OPTION>:-Wall -fPIC
+<G++_COMPILE_FLAGS>:-fPIC -std=c++11
+<G++_COMPILE_OPTIMIZE_FLAGS>:-O3
+<G++_LDFLAGS_OPTION>:
+<GCC_LDFLAGS_OPTION>:
+<G++_LDLIBS_OPTION>:
+<GCC_LDLIBS_OPTION>:
+<SHARED_LIBRARY>:debug_tcp_server_v1
+<SIMULATOR_PLATFORM>:all

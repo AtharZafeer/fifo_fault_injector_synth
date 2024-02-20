@@ -1,0 +1,249 @@
+QuestaSim-64 vmap 2022.4 Lib Mapping Utility 2022.10 Oct 18 2022
+vmap emu_perf_common_v1_0 /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/emu_perf_common_v1_0 
+Modifying modelsim.ini
+sccom -64 -cpppath /tool/gcc/7.4.0/bin/g++ -nodebug -std=c++11 -I /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/include -I /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src -I /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm/include -I /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/common_cpp_v1_0/include -Wall -fPIC -Wall -fPIC -std=gnu++14 -Wno-reorder -Wno-deprecated-declarations -Wno-unused-function -DSC_INCLUDE_DYNAMIC_PROCESSES -O3 -DNDEBUG -work emu_perf_common_v1_0 -f /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/emu_perf_common_v1_0/.cxl.systemc.emu_perf_common_v1_0.emu_perf_common_v1_0.cmf 
+Start time: 18:40:08 on Jan 19,2024
+
+QuestaSim-64 sccom 2022.4 compiler 2022.10 Oct 18 2022
+
+In file included from /cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/systemc:87:0,
+                 from /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm/include/xtlm.h:56,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/include/emulation_profiler_core_base.h:5,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/emdiagcore.cpp:3:
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_bit]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/emdiagcore.cpp:155:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable ‘read_success’ [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_bit]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/emdiagcore.cpp:155:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable ‘write_success’ [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_logic]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/emdiagcore.cpp:155:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable ‘read_success’ [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_logic]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/emdiagcore.cpp:155:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable ‘write_success’ [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_signed]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/emdiagcore.cpp:155:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable ‘read_success’ [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_signed]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/emdiagcore.cpp:155:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable ‘write_success’ [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_unsigned]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/emdiagcore.cpp:155:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable ‘read_success’ [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_unsigned]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/emdiagcore.cpp:155:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable ‘write_success’ [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+In file included from /cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/systemc:87:0,
+                 from /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm/include/xtlm.h:56,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/include/emulation_profiler_core_base.h:5,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/emulation_profiler_core_base.cpp:2:
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_bit]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/emulation_profiler_core_base.cpp:18:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable ‘read_success’ [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_bit]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/emulation_profiler_core_base.cpp:18:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable ‘write_success’ [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_logic]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/emulation_profiler_core_base.cpp:18:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable ‘read_success’ [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_logic]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/emulation_profiler_core_base.cpp:18:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable ‘write_success’ [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_signed]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/emulation_profiler_core_base.cpp:18:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable ‘read_success’ [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_signed]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/emulation_profiler_core_base.cpp:18:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable ‘write_success’ [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_unsigned]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/emulation_profiler_core_base.cpp:18:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable ‘read_success’ [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_unsigned]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/emulation_profiler_core_base.cpp:18:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable ‘write_success’ [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+In file included from /cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/systemc:87:0,
+                 from /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/include/perf_utils.h:50,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/perf_utils.cpp:48:
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_bit]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/perf_utils.cpp:70:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable ‘read_success’ [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_bit]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/perf_utils.cpp:70:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable ‘write_success’ [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_logic]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/perf_utils.cpp:70:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable ‘read_success’ [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_logic]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/perf_utils.cpp:70:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable ‘write_success’ [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_signed]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/perf_utils.cpp:70:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable ‘read_success’ [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_signed]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/perf_utils.cpp:70:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable ‘write_success’ [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_unsigned]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/perf_utils.cpp:70:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable ‘read_success’ [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_unsigned]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/perf_utils.cpp:70:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable ‘write_success’ [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+In file included from /cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/systemc:87:0,
+                 from /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm/include/xtlm.h:56,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/include/tlm_mem_if_analyzer_impl.h:50,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/include/tlm_mem_if_analyzer.h:50,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer.cpp:48:
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_bit]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer.cpp:58:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable ‘read_success’ [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_bit]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer.cpp:58:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable ‘write_success’ [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_logic]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer.cpp:58:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable ‘read_success’ [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_logic]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer.cpp:58:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable ‘write_success’ [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_signed]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer.cpp:58:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable ‘read_success’ [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_signed]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer.cpp:58:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable ‘write_success’ [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_unsigned]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer.cpp:58:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable ‘read_success’ [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_unsigned]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer.cpp:58:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable ‘write_success’ [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer_impl.cpp: In member function ‘void ns_tlm_mem_if_analyzer::tlm_mem_if_analyzer_impl::start_wr_txn(const xtlm::aximm_payload&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer_impl.cpp:137:14: warning: variable ‘t_mem_free’ set but not used [-Wunused-but-set-variable]
+    adr_range t_mem_free = std::make_pair(payload.get_address(),
+              ^~~~~~~~~~
+In file included from /cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/systemc:87:0,
+                 from /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm/include/xtlm.h:56,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/include/tlm_mem_if_analyzer_impl.h:50,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer_impl.cpp:48:
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_bit]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer_impl.cpp:470:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable ‘read_success’ [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_bit]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer_impl.cpp:470:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable ‘write_success’ [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_logic]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer_impl.cpp:470:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable ‘read_success’ [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_logic]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer_impl.cpp:470:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable ‘write_success’ [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_signed]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer_impl.cpp:470:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable ‘read_success’ [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_signed]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer_impl.cpp:470:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable ‘write_success’ [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_unsigned]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer_impl.cpp:470:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable ‘read_success’ [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h: In instantiation of ‘void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_unsigned]’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer_impl.cpp:470:1:   required from here
+/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable ‘write_success’ [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+End time: 18:40:19 on Jan 19,2024, Elapsed time: 0:00:11
+Errors: 0, Warnings: 0
+sccom -64 -cpppath /tool/gcc/7.4.0/bin/g++ -nodebug -linkshared -lib emu_perf_common_v1_0 -lib xtlm -L/home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/common_cpp_v1_0 -lcommon_cpp_v1_0 -work emu_perf_common_v1_0 
+Start time: 18:40:20 on Jan 19,2024
+
+QuestaSim-64 sccom 2022.4 compiler 2022.10 Oct 18 2022
+
+/usr/bin/ld: cannot find -lcommon_cpp_v1_0: No such file or directory
+collect2: error: ld returned 1 exit status
+** Error: (sccom-6126) Linking failed. Creation of /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/emu_perf_common_v1_0/systemc.so failed.
+End time: 18:40:20 on Jan 19,2024, Elapsed time: 0:00:00
+Errors: 1, Warnings: 0

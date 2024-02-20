@@ -1,0 +1,5 @@
+QuestaSim-64 vmap 2022.4 Lib Mapping Utility 2022.10 Oct 18 2022
+vmap common_cpp_v1_0 /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/common_cpp_v1_0 
+Modifying modelsim.ini
+/usr/bin/ld: cannot find crti.o: No such file or directory
+collect2: error: ld returned 1 exit status

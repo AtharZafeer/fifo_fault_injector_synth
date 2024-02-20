@@ -1,0 +1,79 @@
+QuestaSim-64 vmap 2022.4 Lib Mapping Utility 2022.10 Oct 18 2022
+vmap remote_port_sc_v4 /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/remote_port_sc_v4 
+Modifying modelsim.ini
+sccom -64 -cpppath /tool/gcc/7.4.0/bin/g++ -nodebug -I /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/include -I /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/remote_port_c_v4/include -I /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src -I /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/common_cpp_v1_0/include -Wall -fPIC -fPIC -std=c++11 -DREMOTEPORT_SC_DLL -O3 -work remote_port_sc_v4 -f /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/remote_port_sc_v4/.cxl.systemc.remote_port_sc_v4.remote_port_sc_v4.cmf 
+Start time: 18:41:29 on Jan 19,2024
+
+QuestaSim-64 sccom 2022.4 compiler 2022.10 Oct 18 2022
+
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm.cpp: In function ‘void remote_port_ns::print_time()’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm.cpp:129:18: warning: unused variable ‘ms’ [-Wunused-variable]
+         long int ms = tp.tv_sec * 1000 + tp.tv_usec / 1000;
+                  ^~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm.cpp: In member function ‘bool remoteport_tlm::rp_process(bool)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm.cpp:401:13: warning: unused variable ‘r’ [-Wunused-variable]
+     ssize_t r;
+             ^
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_master.cpp: In member function ‘sc_core::sc_time remoteport_tlm_memory_master::rp_bus_access(rp_pkt&, bool, tlm::tlm_command, unsigned char*, std::size_t)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_master.cpp:94:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for(int i=0; i<len; i++){
+                          ~^~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_master.cpp:105:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for(int i=0; i<len; i++){
+                          ~^~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_master.cpp:143:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for(int i=0; i<len; i++){
+                          ~^~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_master.cpp:142:17: warning: unused variable ‘leng’ [-Wunused-variable]
+             int leng = tr.get_data_length();
+                 ^~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_master.cpp:155:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for(int i=0; i<len; i++){
+                          ~^~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_master.cpp:154:17: warning: unused variable ‘leng’ [-Wunused-variable]
+             int leng = tr.get_data_length();
+                 ^~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_master.cpp: In member function ‘void remoteport_tlm_memory_master::dummy_b_transport(tlm::tlm_generic_payload&, sc_core::sc_time&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_master.cpp:229:18: warning: unused variable ‘addr’ [-Wunused-variable]
+     unsigned int addr = trans.get_address();
+                  ^~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_slave.cpp: In member function ‘virtual void remoteport_tlm_memory_slave::b_transport(tlm::tlm_generic_payload&, sc_core::sc_time&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_slave.cpp:194:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for(int i=0; i<len; i++){
+                          ~^~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_slave.cpp:205:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for(int i=0; i<len; i++){
+                          ~^~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_slave.cpp:265:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for(int i=0; i<len; i++){
+                          ~^~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_slave.cpp:274:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for(int i=0; i<len; i++){
+                          ~^~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_slave.cpp:146:10: warning: unused variable ‘resp_ready’ [-Wunused-variable]
+     bool resp_ready;
+          ^~~~~~~~~~
+End time: 18:41:40 on Jan 19,2024, Elapsed time: 0:00:11
+Errors: 0, Warnings: 0
+sccom -64 -cpppath /tool/gcc/7.4.0/bin/g++ -nodebug -linkshared -lib remote_port_sc_v4 -v -L/home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/remote_port_c_v4 -lremote_port_c_v4 -L/home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/common_cpp_v1_0 -lcommon_cpp_v1_0 -work remote_port_sc_v4 
+Start time: 18:41:41 on Jan 19,2024
+
+QuestaSim-64 sccom 2022.4 compiler 2022.10 Oct 18 2022
+
+Using built-in specs.
+COLLECT_GCC=/tool/gcc/7.4.0/bin/g++
+COLLECT_LTO_WRAPPER=/tool/gcc/7.4.0/libexec/gcc/x86_64-pc-linux-gnu/7.4.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: ./configure --prefix=/tool/gcc/7.4.0 --disable-multilib
+Thread model: posix
+gcc version 7.4.0 (GCC) 
+COMPILER_PATH=/usr/lib/x86_64-linux-gnu/:/tool/gcc/7.4.0/libexec/gcc/x86_64-pc-linux-gnu/7.4.0/:/tool/gcc/7.4.0/libexec/gcc/x86_64-pc-linux-gnu/7.4.0/:/tool/gcc/7.4.0/libexec/gcc/x86_64-pc-linux-gnu/:/tool/gcc/7.4.0/lib/gcc/x86_64-pc-linux-gnu/7.4.0/:/tool/gcc/7.4.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/:/tool/gcc/7.4.0/lib/gcc/x86_64-pc-linux-gnu/7.4.0/:/tool/gcc/7.4.0/lib/gcc/x86_64-pc-linux-gnu/7.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/tool/gcc/7.4.0/lib/gcc/x86_64-pc-linux-gnu/7.4.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-L/home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/remote_port_c_v4' '-L/home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/common_cpp_v1_0' '-shared' '-o' '/home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/remote_port_sc_v4/_sc/linux_x86_64_gcc-7.4.0/systemc.so' '-L/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/linux_x86_64' '-B' '/usr/lib/x86_64-linux-gnu' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /tool/gcc/7.4.0/libexec/gcc/x86_64-pc-linux-gnu/7.4.0/collect2 -plugin /tool/gcc/7.4.0/libexec/gcc/x86_64-pc-linux-gnu/7.4.0/liblto_plugin.so -plugin-opt=/tool/gcc/7.4.0/libexec/gcc/x86_64-pc-linux-gnu/7.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwaUvD7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -shared -o /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/remote_port_sc_v4/_sc/linux_x86_64_gcc-7.4.0/systemc.so /usr/lib/x86_64-linux-gnu/crti.o /tool/gcc/7.4.0/lib/gcc/x86_64-pc-linux-gnu/7.4.0/crtbeginS.o -L/home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/remote_port_c_v4 -L/home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/common_cpp_v1_0 -L/cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/linux_x86_64 -L/usr/lib/x86_64-linux-gnu -L/tool/gcc/7.4.0/lib/gcc/x86_64-pc-linux-gnu/7.4.0 -L/tool/gcc/7.4.0/lib/gcc/x86_64-pc-linux-gnu/7.4.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/tool/gcc/7.4.0/lib/gcc/x86_64-pc-linux-gnu/7.4.0/../../.. -lremote_port_c_v4 -lcommon_cpp_v1_0 -E -R /cad/Siemens/2022-23/RHELx86/QUESTA-CORE-PRIME_2022.4/questasim/linux_x86_64 --allow-shlib-undefined /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/remote_port_sc_v4/_sc/linux_x86_64_gcc-7.4.0/remote_port_tlm.o /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/remote_port_sc_v4/_sc/linux_x86_64_gcc-7.4.0/remote_port_tlm_memory_master.o /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/remote_port_sc_v4/_sc/linux_x86_64_gcc-7.4.0/remote_port_tlm_memory_slave.o /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/remote_port_sc_v4/_sc/linux_x86_64_gcc-7.4.0/remote_port_tlm_wires.o -lstdc++ -lm -lgcc_s -lc -lgcc_s /tool/gcc/7.4.0/lib/gcc/x86_64-pc-linux-gnu/7.4.0/crtendS.o /usr/lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lremote_port_c_v4: No such file or directory
+/usr/bin/ld: cannot find -lcommon_cpp_v1_0: No such file or directory
+collect2: error: ld returned 1 exit status
+** Error: (sccom-6126) Linking failed. Creation of /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/remote_port_sc_v4/systemc.so failed.
+End time: 18:41:41 on Jan 19,2024, Elapsed time: 0:00:00
+Errors: 1, Warnings: 0

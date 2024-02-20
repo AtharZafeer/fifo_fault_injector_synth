@@ -1,0 +1,40 @@
+QuestaSim-64 vmap 2022.4 Lib Mapping Utility 2022.10 Oct 18 2022
+vmap debug_tcp_server_v1 /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/debug_tcp_server_v1 
+Modifying modelsim.ini
+In file included from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/debug_tcp_server/debug_tcp_server_v1/src/RdWrTCPSocket.cpp:54:0:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/debug_tcp_server/debug_tcp_server_v1/include/RdWrTCPSocket.h: In constructor ‘RdWrTCPSocket::RdWrTCPSocket(short unsigned int)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/debug_tcp_server/debug_tcp_server_v1/include/RdWrTCPSocket.h:159:8: warning: ‘RdWrTCPSocket::WrDataToSlave’ will be initialized after [-Wreorder]
+  char *WrDataToSlave;
+        ^~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/debug_tcp_server/debug_tcp_server_v1/include/RdWrTCPSocket.h:151:19: warning:   ‘addrinfo* RdWrTCPSocket::res’ [-Wreorder]
+  struct addrinfo *res;
+                   ^~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/debug_tcp_server/debug_tcp_server_v1/src/RdWrTCPSocket.cpp:72:1: warning:   when initialized here [-Wreorder]
+ RdWrTCPSocket::RdWrTCPSocket(unsigned short int tcp_port) :
+ ^~~~~~~~~~~~~
+In file included from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/debug_tcp_server/debug_tcp_server_v1/src/RdWrTCPSocket.cpp:54:0:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/debug_tcp_server/debug_tcp_server_v1/include/RdWrTCPSocket.h:154:6: warning: ‘RdWrTCPSocket::newfd’ will be initialized after [-Wreorder]
+  int newfd;
+      ^~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/debug_tcp_server/debug_tcp_server_v1/include/RdWrTCPSocket.h:152:6: warning:   ‘int RdWrTCPSocket::sockfd’ [-Wreorder]
+  int sockfd;
+      ^~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/debug_tcp_server/debug_tcp_server_v1/src/RdWrTCPSocket.cpp:72:1: warning:   when initialized here [-Wreorder]
+ RdWrTCPSocket::RdWrTCPSocket(unsigned short int tcp_port) :
+ ^~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/debug_tcp_server/debug_tcp_server_v1/src/RdWrTCPSocket.cpp: In member function ‘void RdWrTCPSocket::DataTransfer()’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/debug_tcp_server/debug_tcp_server_v1/src/RdWrTCPSocket.cpp:426:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+      for (int i = 0; i < (request.DataLength); i++) {
+                      ~~^~~~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/debug_tcp_server/debug_tcp_server_v1/src/RdWrTCPSocket.cpp: In member function ‘void RdWrTCPSocket::setMembers(const std::vector<std::__cxx11::basic_string<char> >&)’:
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/debug_tcp_server/debug_tcp_server_v1/src/RdWrTCPSocket.cpp:541:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for (int i = 0, j = 0; i < (CmdElems[2].length() );
+                           ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/debug_tcp_server/debug_tcp_server_v1/src/RdWrTCPSocket.cpp:570:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if ((i + 1) < (CmdElems[2].length())) {
+         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/debug_tcp_server/debug_tcp_server_v1/src/RdWrTCPSocket.cpp:539:16: warning: unused variable ‘StartWrData’ [-Wunused-variable]
+    const char *StartWrData = CmdElems[2].c_str();
+                ^~~~~~~~~~~
+/usr/bin/ld: cannot find crti.o: No such file or directory
+collect2: error: ld returned 1 exit status

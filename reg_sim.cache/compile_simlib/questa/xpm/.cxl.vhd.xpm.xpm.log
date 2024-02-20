@@ -1,0 +1,12 @@
+QuestaSim-64 vmap 2022.4 Lib Mapping Utility 2022.10 Oct 18 2022
+vmap xpm /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xpm 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2022.4 Compiler 2022.10 Oct 18 2022
+Start time: 18:38:13 on Jan 19,2024
+vcom -64 -work xpm -f /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xpm/.cxl.vhd.xpm.xpm.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package VCOMPONENTS
+End time: 18:38:14 on Jan 19,2024, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

@@ -1,0 +1,19 @@
+<SIMMODEL_NAME>:rwd_tlmmodel
+<LIBRARY_NAME>:rwd_tlmmodel_v1
+<LIBRARY_TYPE>:SystemC
+<OUTPUT_FORMAT>:library
+<SYSTEMC_SOURCES>:systemc/simlibs/rwd_tlmmodel/rwd_tlmmodel_v1/src/rwd_tlmmodel.cpp
+<SYSTEMC_SOURCES>:systemc/simlibs/rwd_tlmmodel/rwd_tlmmodel_v1/src/rwd_interface.cpp
+<SYSTEMC_INCLUDE_DIRS>:simlibs/rwd_tlmmodel_v1/include/,simlibs/debug_tcp_server_v1/include/
+<SYSTEMC_COMPILE_OPTION>:-nodebug
+<CPP_COMPILE_OPTION>:-Wall -fPIC
+<C_COMPILE_OPTION>:-Wall -fPIC
+<G++_COMPILE_FLAGS>:-fPIC -std=c++11 -DRWD_TLMMODEL_SC_DLL
+<G++_COMPILE_OPTIMIZE_FLAGS>:-O3
+<G++_LDFLAGS_OPTION>:
+<GCC_LDFLAGS_OPTION>:
+<LDLIBS>:-Lquesta_lib/debug_tcp_server_v1,-ldebug_tcp_server_v1
+<G++_LDLIBS_OPTION>:
+<GCC_LDLIBS_OPTION>:
+<SHARED_LIBRARY>:rwd_tlmmodel_v1
+<SIMULATOR_PLATFORM>:all

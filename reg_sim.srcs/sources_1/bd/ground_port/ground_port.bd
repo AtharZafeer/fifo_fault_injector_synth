@@ -1,0 +1,30 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xczu9eg-ffvb1156-2-e",
+      "name": "ground_port",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2"
+    },
+    "design_tree": {
+      "ground_module_0": ""
+    },
+    "components": {
+      "ground_module_0": {
+        "vlnv": "xilinx.com:module_ref:ground_module:1.0",
+        "xci_name": "ground_port_ground_module_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ground_module",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "vir_gnd": {
+            "direction": "O"
+          }
+        }
+      }
+    }
+  }
+}

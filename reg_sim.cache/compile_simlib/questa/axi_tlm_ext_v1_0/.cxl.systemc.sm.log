@@ -1,0 +1,31 @@
+QuestaSim-64 vmap 2022.4 Lib Mapping Utility 2022.10 Oct 18 2022
+vmap axi_tlm_ext_v1_0 /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/axi_tlm_ext_v1_0 
+Modifying modelsim.ini
+sccom -64 -cpppath /tool/gcc/7.4.0/bin/g++ -nodebug -std=c++14 -I /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/tlm_ext/axi_tlm_ext_v1_0/include -I /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm/include -I /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/common_cpp_v1_0/include -Wall -fPIC -fPIC -DSC_INCLUDE_DYNAMIC_PROCESSES -O3 -work axi_tlm_ext_v1_0 -f /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/axi_tlm_ext_v1_0/.cxl.systemc.axi_tlm_ext_v1_0.axi_tlm_ext_v1_0.cmf 
+Start time: 18:40:20 on Jan 19,2024
+
+QuestaSim-64 sccom 2022.4 compiler 2022.10 Oct 18 2022
+
+In file included from /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm/include/xtlm_adaptors/xaximm_pin2xtlm_wr_t.h:59:0,
+                 from /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm/include/xtlm_adaptors/xaximm_pin2xtlm_t.h:51,
+                 from /home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm/include/xtlm.h:126,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/tlm_ext/axi_tlm_ext_v1_0/src/TlmExtDef.h:12,
+                 from /cad/xilinx/Vivado/2023.2/data/systemc/simlibs/tlm_ext/axi_tlm_ext_v1_0/src/TlmExtDef.cxx:9:
+/home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm/include/xtlm_adaptors/xtlm_adaptors_utils.h: In constructor ‘xtlm::xtlm_adaptor::xtlm_adaptor_log_utils::xtlm_adaptor_log_utils(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)’:
+/home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm/include/xtlm_adaptors/xtlm_adaptors_utils.h:65:34: warning: ‘xtlm::xtlm_adaptor::xtlm_adaptor_log_utils::m_report_handler’ will be initialized after [-Wreorder]
+  xsc::common_cpp::report_handler m_report_handler;
+                                  ^~~~~~~~~~~~~~~~
+/home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm/include/xtlm_adaptors/xtlm_adaptors_utils.h:61:7: warning:   ‘bool xtlm::xtlm_adaptor::xtlm_adaptor_log_utils::m_enable_aximm_logs’ [-Wreorder]
+  bool m_enable_aximm_logs;
+       ^~~~~~~~~~~~~~~~~~~
+/home/azafeer/Desktop/test/reg_sim/reg_sim.cache/compile_simlib/questa/xtlm/include/xtlm_adaptors/xtlm_adaptors_utils.h:67:5: warning:   when initialized here [-Wreorder]
+     xtlm_adaptor_log_utils(const std::string module_name,
+     ^~~~~~~~~~~~~~~~~~~~~~
+End time: 18:40:23 on Jan 19,2024, Elapsed time: 0:00:03
+Errors: 0, Warnings: 0
+sccom -64 -cpppath /tool/gcc/7.4.0/bin/g++ -nodebug -linkshared -lib axi_tlm_ext_v1_0 -work axi_tlm_ext_v1_0 
+Start time: 18:40:23 on Jan 19,2024
+
+QuestaSim-64 sccom 2022.4 compiler 2022.10 Oct 18 2022
+End time: 18:40:23 on Jan 19,2024, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

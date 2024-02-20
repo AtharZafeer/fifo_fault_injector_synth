@@ -1,0 +1,41 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /cad/xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L secureip --snapshot tb_small_reg_top_func_synth xil_defaultlib.tb_small_reg_top xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.BUFGCE(CE_TYPE="ASYNC",SIM_DEVIC...
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.FDCE_default
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.FDPE_default
+Compiling module unisims_ver.latchsre_ldce
+Compiling module unisims_ver.LDCE
+Compiling module xil_defaultlib.lfsr_address_gen
+Compiling module xil_defaultlib.fault_injector
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.AND2B1L
+Compiling module unisims_ver.MUXF7
+Compiling module xil_defaultlib.ff_d__1
+Compiling module xil_defaultlib.ff_d__2
+Compiling module xil_defaultlib.ff_d__3
+Compiling module xil_defaultlib.ff_d
+Compiling module xil_defaultlib.fifo_reg
+Compiling module xil_defaultlib.small_reg_top
+Compiling module xil_defaultlib.tb_small_reg_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_small_reg_top_func_synth

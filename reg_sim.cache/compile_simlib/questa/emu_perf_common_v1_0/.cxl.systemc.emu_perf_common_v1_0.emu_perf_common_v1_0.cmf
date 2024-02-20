@@ -1,0 +1,5 @@
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/emdiagcore.cpp
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/emulation_profiler_core_base.cpp
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/perf_utils.cpp
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer.cpp
+/cad/xilinx/Vivado/2023.2/data/systemc/simlibs/emu_perf_common/emu_perf_common_v1_0/src/tlm_mem_if_analyzer_impl.cpp

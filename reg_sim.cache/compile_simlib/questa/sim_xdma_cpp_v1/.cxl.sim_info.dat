@@ -1,0 +1,19 @@
+<SIMMODEL_NAME>:sim_xdma_cpp
+<LIBRARY_NAME>:sim_xdma_cpp_v1
+<LIBRARY_TYPE>:CPP
+<OUTPUT_FORMAT>:library
+<CPP_SOURCES>:systemc/simlibs/sim_xdma_cpp/sim_xdma_cpp_v1/src/sim_xdma_helper.cxx
+<CPP_SOURCES>:systemc/simlibs/sim_xdma_cpp/sim_xdma_cpp_v1/src/xcl_api.cxx
+<CPP_SOURCES>:systemc/simlibs/sim_xdma_cpp/sim_xdma_cpp_v1/src/xcl_api_resp.cxx
+<CPP_INCLUDE_DIRS>:simlibs/sim_xdma_cpp_v1/include/,simlibs/common_rpc_v1/include,$xv_ext_lib_path/protobuf/include,simlibs/xtlm/include,simlibs/common_cpp_v1_0/include
+<SYSTEMC_COMPILE_OPTION>:-nodebug
+<CPP_COMPILE_OPTION>:-Wall -fPIC
+<C_COMPILE_OPTION>:-Wall -fPIC
+<G++_COMPILE_FLAGS>:-fPIC -std=c++11
+<G++_COMPILE_OPTIMIZE_FLAGS>:-O3
+<G++_LDFLAGS_OPTION>:
+<GCC_LDFLAGS_OPTION>:
+<G++_LDLIBS_OPTION>:
+<GCC_LDLIBS_OPTION>:
+<SHARED_LIBRARY>:sim_xdma_cpp_v1
+<SIMULATOR_PLATFORM>:linux

@@ -1,0 +1,7 @@
+0.7
+2020.2
+Oct 13 2023
+20:21:30
+/home/azafeer/Desktop/test/FIFO/FIFO.srcs/sim_1/new/tb_fifo_reg.sv,1706707298,systemVerilog,,,,tb_fifo_reg,,uvm,,,,,,
+/home/azafeer/Desktop/test/reg_sim/reg_sim.sim/sim_1/synth/func/xsim/tb_small_reg_top_func_synth.v,1708461073,verilog,,,,fault_injector;ff_d;ff_d__1;ff_d__2;ff_d__3;fifo_reg;glbl;lfsr_address_gen;small_reg_top,,uvm,,,,,,
+/home/azafeer/Desktop/test/reg_sim/reg_sim.srcs/sim_1/new/tb_small_reg_top.sv,1708453834,systemVerilog,,,,tb_small_reg_top,,uvm,,,,,,

@@ -1,0 +1,194 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/azafeer/Desktop/test/reg_sim/reg_sim.sim/sim_1/synth/func/questa
+vff_d
+Z2 !s10a 1706887649
+Z3 !s110 1706707130
+!i10b 1
+!s100 MgQH_Cdc8Sj4ZiZK_g`;=0
+!s11b ^O?hkH9n`l8XMRL84jBoQ1
+IzgZIMJHe<gJ9>1RIoTm:b2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+R1
+Z5 w1706707127
+Z6 8tb_fifo_reg_func_synth.v
+Z7 Ftb_fifo_reg_func_synth.v
+!i122 -1
+L0 16
+Z8 OL;L;2019.4;69
+r1
+!s85 0
+31
+Z9 !s108 1706707129.000000
+Z10 !s107 tb_fifo_reg_func_synth.v|
+Z11 !s90 -64|-incr|-mfcu|-work|xil_defaultlib|tb_fifo_reg_func_synth.v|
+!i113 0
+Z12 o-64 -mfcu -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 tCvgOpt 0
+vff_d__1
+R2
+R3
+!i10b 1
+!s100 FmS>WWKZd_K1G7m[7m:<E2
+!s11b =9B5a<i?RVSG=Kl^d0>2f2
+IS[55KhS0ljk>A3WXK=AAM3
+R4
+R1
+R5
+R6
+R7
+!i122 -1
+L0 534
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vff_d__2
+R2
+R3
+!i10b 1
+!s100 D:<85jkOTihHPckcIjB>[0
+!s11b minjGI3:1XD]:gE02fMAO0
+IW9^KnZV?b9iAgVO2;d_LY0
+R4
+R1
+R5
+R6
+R7
+!i122 -1
+L0 1052
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vff_d__3
+R2
+R3
+!i10b 1
+!s100 6_0cEV4@KOYeS13O0_SOU1
+!s11b cP[EVh`:mIE3Zc]E9NeY80
+I;<;zVeK9i9TId:KWF6cKV1
+R4
+R1
+R5
+R6
+R7
+!i122 -1
+L0 1570
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vfifo_reg
+R2
+R3
+!i10b 1
+!s100 Dk[nE2V3zSBOoRKaa2W5B1
+!s11b 1YINAg3nQ?>K=?jYMW_7;0
+IJ@BN]YNEEnB[TaHf7^nBD0
+R4
+R1
+R5
+R6
+R7
+!i122 -1
+L0 2088
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vglbl
+R2
+R3
+!i10b 1
+!s100 >]oT85[DXM_aW=JiZFS803
+!s11b kEoogN=ibS<DD@Y5IBUAo1
+I;8bA?k@bR27JBRQ^^F3Fi3
+R4
+R1
+R5
+R6
+R7
+!i122 -1
+L0 3204
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vtb_fifo_reg
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1706887651
+!i10b 1
+!s100 IhiWm=l2LMmdk_G3HLF8z3
+!s11b :IA5?`jX?]Te7]b3^^_UJ2
+Il`AZJL<`A:16_nnD]O:530
+R4
+S1
+R1
+w1706707298
+8../../../../../../FIFO/FIFO.srcs/sim_1/new/tb_fifo_reg.sv
+F../../../../../../FIFO/FIFO.srcs/sim_1/new/tb_fifo_reg.sv
+!i122 -1
+L0 2
+R8
+r1
+!s85 0
+31
+!s108 1706887651.000000
+!s107 ../../../../../../FIFO/FIFO.srcs/sim_1/new/tb_fifo_reg.sv|
+!s90 -64|-incr|-mfcu|-sv|-work|xil_defaultlib|../../../../../../FIFO/FIFO.srcs/sim_1/new/tb_fifo_reg.sv|
+!i113 0
+o-64 -mfcu -sv -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R13
+Ttb_fifo_reg_opt
+!s110 1706887652
+VZJTnEZ@ja:Vak5dKoK5QQ3
+04 11 4 work tb_fifo_reg fast 0
+04 4 4 work glbl fast 0
+o+acc=npr -suppress 10016 -L xil_defaultlib -L unisims_ver -L secureip -work xil_defaultlib
+R13
+ntb_fifo_reg_opt
+OL;O;2019.4;69

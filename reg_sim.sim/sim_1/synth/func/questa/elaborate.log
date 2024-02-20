@@ -1,0 +1,33 @@
+QuestaSim-64 vopt 2019.4 Compiler 2019.10 Oct 15 2019
+Start time: 15:27:32 on Feb 02,2024
+vopt "+acc=npr" -suppress 10016 -L xil_defaultlib -L unisims_ver -L secureip -work xil_defaultlib xil_defaultlib.tb_fifo_reg xil_defaultlib.glbl -o tb_fifo_reg_opt 
+
+Top level modules:
+	tb_fifo_reg
+	glbl
+
+Analyzing design...
+-- Loading module tb_fifo_reg
+-- Loading module fifo_reg
+-- Loading module unisims_ver.IBUF
+-- Loading module unisims_ver.BUFGCE
+-- Loading module unisims_ver.LUT1
+-- Loading UDP unisims_ver.x_lut1_mux2
+-- Loading module unisims_ver.LUT2
+-- Loading UDP unisims_ver.x_lut2_mux4
+-- Loading module unisims_ver.FDRE
+-- Loading module unisims_ver.OBUF
+-- Loading module unisims_ver.LUT5
+-- Loading module unisims_ver.LUT6
+-- Loading module ff_d__1
+-- Loading module unisims_ver.FDCE
+-- Loading module ff_d__2
+-- Loading module ff_d__3
+-- Loading module ff_d
+-- Loading module glbl
+Incremental compilation check found 25 design-units (out of 26) may be reused.
+Optimizing 1 design-unit (inlining 0/7 module instances, 0/418 cell instances, 140/140 UDP instances):
+-- Optimizing module tb_fifo_reg(fast)
+Optimized design name is tb_fifo_reg_opt
+End time: 15:27:32 on Feb 02,2024, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
